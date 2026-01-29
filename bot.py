@@ -10,7 +10,10 @@ TOKEN = os.getenv("DISCORD_TOKEN")
 GUILD_ID = os.getenv("GUILD_ID")  # optional but recommended for instant slash updates
 
 intents = discord.Intents.default()
-intents.message_content = True  # REQUIRED for prefix commands (!guess etc)
+intents.message_content = True
+intents.members = True      # ADD
+intents.voice_states = True # ADD
+
 
 bot = commands.Bot(
     command_prefix="!",
