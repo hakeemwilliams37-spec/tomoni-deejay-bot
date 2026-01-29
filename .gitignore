@@ -1,0 +1,21 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# local data_old
+data/leaderboards.json
+
+# IDE
+.idea/
+# runtime data (changes)
+data/leaderboards.json
+data/stats.json
+
+# keep joke libraries tracked (do NOT ignore these)
+!data/jokes_japan.json
+!data/jokes_japan_extra.json
